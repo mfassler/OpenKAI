@@ -40,9 +40,9 @@ bool _Camera::open(void)
 		return false;
 	}
 
-	m_camera.set(CV_CAP_PROP_FRAME_WIDTH, m_w);
-	m_camera.set(CV_CAP_PROP_FRAME_HEIGHT, m_h);
-	m_camera.set(CV_CAP_PROP_FPS, m_targetFPS);
+	m_camera.set(CAP_PROP_FRAME_WIDTH, m_w);
+	m_camera.set(CAP_PROP_FRAME_HEIGHT, m_h);
+	m_camera.set(CAP_PROP_FPS, m_targetFPS);
 
 	Mat cMat;
 	//Acquire a frame to determine the actual frame size

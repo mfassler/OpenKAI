@@ -169,10 +169,10 @@ void _VisionBase::postProcess(void)
 		m_fBGR = m_fBGR.crop(m_cropBB);
 
 	if (m_pGray)
-		*m_pGray = m_fBGR.cvtColor(CV_BGR2GRAY);
+		*m_pGray = m_fBGR.cvtColor(COLOR_BGR2GRAY);
 
 	if (m_pHSV)
-		*m_pHSV = m_fBGR.cvtColor(CV_BGR2HSV);
+		*m_pHSV = m_fBGR.cvtColor(COLOR_BGR2HSV);
 
 	if (m_bPers)
 	{
